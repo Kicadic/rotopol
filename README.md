@@ -1,2 +1,0 @@
-# rotopol
-Website for company.
