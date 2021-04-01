@@ -35,6 +35,9 @@ header {
 section {
   padding: 80px 0;
 }
+.section-about {
+  background-color: #fcfcfc;
+}
 /* ----------------------- */
 /* ---HEADERS--- */
 /* ----------------------- */
@@ -65,7 +68,7 @@ h2 {
 }
 h2 {
   word-spacing: 3px;
-  font-size: 180%;
+  font-size: 190%;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -78,19 +81,24 @@ h2:after {
   margin: 0 auto;
   margin-top: 20px;
 }
-
+h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 140%;
+}
 /* ----------------------- */
 /* ---TEXT--- */
 /* ----------------------- */
 .main-about {
   width: 80%;
   margin-left: 10%;
-  margin-bottom: 30px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
 }
 p {
-  word-spacing: 1px;
   line-height: 140%;
-  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #535353;
 }
 
 /* ----------------------- */
@@ -173,5 +181,8 @@ nav ul li a:active {
 /* ---ICONS--- */
 /* ----------------------- */
 .features-icon {
-  font-size: 50px;
+  font-size: 60px;
+  color: #104da8;
+  margin-left: 35%;
+  margin-bottom: 10px;
 }
