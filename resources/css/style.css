@@ -16,6 +16,14 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column-box {
+  padding: 1%;
+}
 /* SECTIONS */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
@@ -24,20 +32,20 @@ header {
   background-size: cover;
   background-position: center;
 }
+section {
+  padding: 80px 0;
+}
 /* ----------------------- */
 /* ---HEADERS--- */
 /* ----------------------- */
 
 /* MAIN HEADER */
-.header-text-box h1 {
-  margin-top: 0;
+
+h1 {
   margin-bottom: 25px;
   word-spacing: 4px;
-  letter-spacing: 1px;
+  font-size: 240%;
   line-height: 140%;
-  font-size: 200%;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 .header-text-box {
   color: #fff;
@@ -47,6 +55,44 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* OTHER HEADINGS */
+h1,
+h2 {
+  margin-top: 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h2 {
+  word-spacing: 3px;
+  font-size: 180%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #ffcc01;
+  content: " ";
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* ----------------------- */
+/* ---TEXT--- */
+/* ----------------------- */
+.main-about {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+p {
+  word-spacing: 1px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
 /* ----------------------- */
 /* ---BUTTONS--- */
 /* ----------------------- */
@@ -126,3 +172,6 @@ nav ul li a:active {
 /* ----------------------- */
 /* ---ICONS--- */
 /* ----------------------- */
+.features-icon {
+  font-size: 50px;
+}
