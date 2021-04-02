@@ -45,6 +45,9 @@ section {
 .section-gallery {
   padding: 0;
 }
+.section-services {
+  background-image: #fcfcfc;
+}
 /* ----------------------- */
 /* ---HEADERS--- */
 /* ----------------------- */
@@ -107,7 +110,10 @@ p {
   margin-bottom: 30px;
   color: #535353;
 }
-
+/* ---SERVICES--- */
+.section-services p {
+  text-align: justify;
+}
 /* ----------------------- */
 /* ---BUTTONS--- */
 /* ----------------------- */
