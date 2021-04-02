@@ -27,6 +27,7 @@ body {
 }
 .column-box {
   padding: 1%;
+  text-align: center;
 }
 /* SECTIONS */
 header {
@@ -46,7 +47,11 @@ section {
   padding: 0;
 }
 .section-services {
-  background-image: #fcfcfc;
+  background-color: #fcfcfc;
+}
+.section-contact {
+  background-color: #f7f7f7;
+  font-size: 120%;
 }
 /* ----------------------- */
 /* ---HEADERS--- */
@@ -113,6 +118,10 @@ p {
 /* ---SERVICES--- */
 .section-services p {
   text-align: justify;
+}
+/* ---CONTACT--- */
+.contact-content {
+  text-align: center;
 }
 /* ----------------------- */
 /* ---BUTTONS--- */
@@ -196,8 +205,14 @@ nav ul li a:active {
 .features-icon {
   font-size: 60px;
   color: #104da8;
-  margin-left: 35%;
   margin-bottom: 10px;
+}
+.contact-icon {
+  font-size: 60px;
+  color: #104da8;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
 /* ----------------------- */
 /* ---GALLERY--- */
