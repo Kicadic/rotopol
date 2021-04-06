@@ -189,13 +189,11 @@ footer a:active {
   width: 150px;
   height: auto;
   float: left;
+  margin-top: 20px;
 }
 /* ----------------------- */
 /* ---NAVIGATION--- */
 /* ----------------------- */
-nav img {
-  margin-top: 20px;
-}
 nav ul {
   float: right;
   margin-top: 50px;
