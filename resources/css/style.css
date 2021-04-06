@@ -53,6 +53,12 @@ section {
   background-color: #f7f7f7;
   font-size: 120%;
 }
+footer {
+  background-color: #333;
+  color: #888;
+  padding: 50px 0;
+  line-height: 140%;
+}
 /* ----------------------- */
 /* ---HEADERS--- */
 /* ----------------------- */
@@ -122,6 +128,19 @@ p {
 /* ---CONTACT--- */
 .contact-content {
   text-align: center;
+}
+/* ----------------------- */
+/* ---FOOTER-LINKS--- */
+/* ----------------------- */
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+}
+footer a:hover,
+footer a:active {
+  color: #ffe478;
 }
 /* ----------------------- */
 /* ---BUTTONS--- */
@@ -203,12 +222,12 @@ nav ul li a:active {
 /* ---ICONS--- */
 /* ----------------------- */
 .features-icon {
-  font-size: 60px;
+  font-size: 300%;
   color: #104da8;
   margin-bottom: 10px;
 }
 .contact-icon {
-  font-size: 60px;
+  font-size: 300%;
   color: #104da8;
   margin-right: 10px;
   text-align: center;
@@ -242,4 +261,10 @@ nav ul li a:active {
 .gallery-list li img:hover {
   transform: scale(1.03);
   opacity: 1;
+}
+/* ----------------------- */
+/* ---MAPS--- */
+/* ----------------------- */
+.maps {
+  margin-top: 50px;
 }
