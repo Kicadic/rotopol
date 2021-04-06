@@ -14,12 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="sticky">
+      <nav>
         <div class="row">
           <img
             src="resources/logo/logo-half-white.png"
@@ -32,10 +35,10 @@
             class="logo-dark"
           />
           <ul class="main-nav">
-            <li><a href="#"> O firmie </a></li>
-            <li><a href="#"> Galeria </a></li>
-            <li><a href="#"> Usługi </a></li>
-            <li><a href="#"> Kontakt </a></li>
+            <li><a href="#about"> O firmie </a></li>
+            <li><a href="#gallery"> Galeria </a></li>
+            <li><a href="#services"> Usługi </a></li>
+            <li><a href="#contact"> Kontakt </a></li>
           </ul>
         </div>
         <div class="clearfix"></div>
@@ -46,12 +49,12 @@
           Oferujemy usługi związane <br />
           z infastrukturą podziemną.
         </h1>
-        <a href="#" class="btn btn-more">Czytaj dalej</a>
+        <a href="#about" class="btn btn-more animated pulse">Czytaj dalej</a>
         <a href="#" class="btn btn-yt">Zobacz video</a>
       </div>
     </header>
 
-    <section class="section-about">
+    <section class="section-about js--section-about" id="about">
       <div class="row">
         <h2>O firmie</h2>
         <p class="main-about">
@@ -61,7 +64,7 @@
           podziemną.
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-3 column-box">
           <ion-icon name="medal-outline" class="features-icon"></ion-icon>
           <h3>Wieloletnie doświadczenie</h3>
@@ -92,7 +95,7 @@
       </div>
     </section>
 
-    <section class="section-gallery">
+    <section class="section-gallery" id="gallery">
       <ul class="gallery-list clearfix">
         <li>
           <figure class="gallery-photo">
@@ -139,9 +142,9 @@
       </ul>
     </section>
 
-    <section class="section-services">
+    <section class="section-services" id="services">
       <h2>Usługi</h2>
-      <div class="row">
+      <div class="row js--wp-2">
         <div class="col span-1-of-2 column-box clearfix">
           <h3>Przewierty sterowane</h3>
           <p>
@@ -163,7 +166,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row js--wp-2">
         <div class="col span-1-of-2 column-box clearfix">
           <h3>Zgrzewanie rur PE</h3>
           <p>
@@ -180,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
       <div class="row">
         <h2>Kontakt</h2>
       </div>
@@ -228,12 +231,16 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
   </body>
 </html>
