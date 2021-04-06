@@ -262,6 +262,11 @@ footer a:active {
   text-align: center;
   vertical-align: middle;
 }
+.yt-icon {
+  vertical-align: middle;
+  /* TODO: najeżdzanie na przycisk zmienia kolor ikony na color: #ff0000; */
+}
+
 /* ----------------------- */
 /* ---GALLERY--- */
 /* ----------------------- */
