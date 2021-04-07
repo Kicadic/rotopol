@@ -1,3 +1,4 @@
+"use strict";
 $(document).ready(function () {
   $(".js--section-about").waypoint(
     function (direction) {
@@ -74,4 +75,38 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+});
+
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnOpenModal = document.querySelector(".show-modal");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  // add listener to disable scroll
+  window.addEventListener("scroll", noScroll);
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  // Remove listener to re-enable scroll
+  window.removeEventListener("scroll", noScroll);
+};
+
+const noScroll = function () {
+  window.scrollTo(0, 0);
+};
+
+btnOpenModal.addEventListener("click", openModal);
+overlay.addEventListener("click", closeModal);
+btnCloseModal.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
 });
