@@ -81,6 +81,8 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnOpenModal = document.querySelector(".show-modal");
+const ytIcon = document.querySelector(".yt-icon");
+const ytBtn = document.querySelector(".btn-yt");
 
 const openModal = function () {
   modal.classList.remove("hidden");
@@ -109,4 +111,14 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
+});
+
+ytBtn.addEventListener("mouseover", function () {
+  ytIcon.style.color = "#ff0000";
+  ytIcon.style.transition.color = "0.3s";
+});
+
+ytBtn.addEventListener("mouseout", function () {
+  ytIcon.style.color = "#fff";
+  ytIcon.style.transition.color = "0.3s";
 });
