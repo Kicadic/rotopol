@@ -32,7 +32,7 @@ body {
 /* SECTIONS */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(/vendors/img/daniel-mccullough--FPFq_trr2Y-unsplash.jpg);
+    url(../../vendors/img/daniel-mccullough--FPFq_trr2Y-unsplash.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -247,6 +247,13 @@ footer a:active {
 .main-nav li a:active {
   border-bottom: 2px solid #ffcc01;
 }
+/* ---MOBILE NAV--- */
+.mobile-nav-icon {
+  float: right;
+  margin: 30px;
+  cursor: pointer;
+  display: none;
+}
 /* ----------------------- */
 /* ---ICONS--- */
 /* ----------------------- */
@@ -262,9 +269,15 @@ footer a:active {
   text-align: center;
   vertical-align: middle;
 }
+/* ---YOUTUBE ICON--- */
 .yt-icon {
   vertical-align: middle;
-  /* TODO: najeżdzanie na przycisk zmienia kolor ikony na color: #ff0000; */
+  transition: color 0.3s;
+}
+/* ---MOBILE ICON--- */
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: #fff;
 }
 
 /* ----------------------- */

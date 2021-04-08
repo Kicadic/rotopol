@@ -75,6 +75,13 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
+  /* Mobile nav */
+
+  $(".js--nav-icon").click(function () {
+    var nav = $(".main-nav");
+    nav.slideToggle(200);
+  });
 });
 
 const modal = document.querySelector(".modal");
@@ -107,7 +114,6 @@ overlay.addEventListener("click", closeModal);
 btnCloseModal.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
-  console.log(e.key);
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
@@ -115,10 +121,8 @@ document.addEventListener("keydown", function (e) {
 
 ytBtn.addEventListener("mouseover", function () {
   ytIcon.style.color = "#ff0000";
-  ytIcon.style.transition.color = "0.3s";
 });
 
 ytBtn.addEventListener("mouseout", function () {
   ytIcon.style.color = "#fff";
-  ytIcon.style.transition.color = "0.3s";
 });
