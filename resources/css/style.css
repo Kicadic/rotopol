@@ -21,9 +21,11 @@ body {
   zoom: 1;
 }
 .clearfix:after {
-  content: "";
-  display: table;
+  content: ".";
   clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 .column-box {
   padding: 1%;
@@ -67,13 +69,14 @@ footer {
 /* MAIN HEADER */
 
 h1 {
+  margin-top: 0;
   margin-bottom: 25px;
   word-spacing: 4px;
   font-size: 240%;
   line-height: 140%;
+  color: #fff;
 }
 .header-text-box {
-  color: #fff;
   position: absolute;
   width: 1140px;
   top: 55%;
@@ -116,6 +119,7 @@ h3 {
   margin-left: 10%;
   word-spacing: 1px;
   letter-spacing: 1px;
+  text-align: center;
 }
 p {
   line-height: 140%;
@@ -232,16 +236,17 @@ footer a:active {
 .main-nav li {
   list-style: none;
   display: inline-block;
-  margin-right: 80px;
+  margin-left: 60px;
   color: #fff;
 }
 .main-nav li a:link,
 .main-nav li a:visited {
+  padding: 8px 0px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
-  padding-bottom: 9px;
+  transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active {
@@ -258,11 +263,13 @@ footer a:active {
 /* ---ICONS--- */
 /* ----------------------- */
 .features-icon {
+  display: inline-block;
   font-size: 300%;
   color: #104da8;
   margin-bottom: 10px;
 }
 .contact-icon {
+  display: inline-block;
   font-size: 300%;
   color: #104da8;
   margin-right: 10px;
@@ -356,6 +363,7 @@ footer a:active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   z-index: 5;
 }

@@ -1,7 +1,39 @@
-/* Devices from 0 to 480px */
-@media only screen and (max-width: 480px) {
+/* Devices to 1200px */
+@media only screen and (max-width: 1200px) {
+  .header-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* Devices from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
   section {
-    padding: 35px 0;
+    padding: 60px 0;
+  }
+  .main-about {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 10px 20px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  .logo {
+    width: 100px;
+  }
+  .logo-dark {
+    margin-right: 25px;
   }
 }
 
@@ -24,7 +56,7 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  nav ul {
+  .main-nav {
     display: none;
   }
   h1 {
@@ -42,7 +74,6 @@
   .main-nav {
     float: left;
     margin-top: 35px;
-    margin-left: 25px;
   }
   .main-nav li {
     display: block;
@@ -56,6 +87,7 @@
   }
   .sticky .main-nav {
     margin-top: 10px;
+    margin-left: auto;
   }
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
@@ -69,46 +101,35 @@
   }
 }
 
-/* Devices from 768 to 1023px */
-@media only screen and (max-width: 1023px) {
+/* Devices from 281 to 480px */
+@media only screen and (max-width: 480px) {
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
   section {
-    padding: 60px 0;
+    padding: 25px 0;
   }
-  .main-about {
-    width: 80%;
-    margin-left: 10%;
+
+  h1 {
+    font-size: 160%;
   }
-  nav ul {
-    margin-right: 40px;
+  h2 {
+    font-size: 140%;
+  }
+  h3 {
+    font-size: 120%;
   }
   .header-text-box {
-    width: 100%;
+    top: 60%;
   }
-  .btn:link,
-  .btn:visited {
-    padding: 10px 20px;
-  }
-  footer {
-    padding: 30px 0;
-  }
-  .logo {
-    width: 100px;
+  .main-nav li {
+    margin-left: 30px;
   }
 }
 
-/* Devices to 1200px */
-@media only screen and (max-width: 1200px) {
-  .header-text-box {
-    width: 100%;
-    padding: 0 2%;
-  }
-  .row {
-    padding: 0 2%;
-  }
-  nav ul li {
-    margin-right: 60px;
+/* Devices from 0 to 280px */
+@media only screen and (max-width: 280px) {
+  .main-nav li {
+    margin-left: auto;
   }
 }
