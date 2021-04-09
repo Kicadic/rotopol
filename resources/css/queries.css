@@ -7,6 +7,9 @@
   .row {
     padding: 0 2%;
   }
+  .gallery-list li {
+    width: 50%;
+  }
 }
 
 /* Devices from 768 to 1023px */
@@ -21,7 +24,6 @@
     width: 80%;
     margin-left: 10%;
   }
-
   .btn:link,
   .btn:visited {
     padding: 10px 20px;
@@ -55,6 +57,9 @@
   .col {
     width: 100%;
     margin: 0 0 4% 0;
+  }
+  .gallery-list li {
+    width: 100%;
   }
   .main-nav {
     display: none;

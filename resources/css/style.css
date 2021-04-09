@@ -34,7 +34,7 @@ body {
 /* SECTIONS */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../../vendors/img/daniel-mccullough--FPFq_trr2Y-unsplash.jpg);
+    url(../../vendors/img/daniel-mccullough--FPFq_trr2Y-unsplash-min.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
